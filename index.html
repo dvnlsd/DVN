@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+<title>ĐẶNG VĂN NAM CUỐI KÌ</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Courier New', monospace;
+        background: #f0f0f0;
+        display: flex;
+    }
+    /* Quảng cáo hai bên */
+    .ads {
+        width: 15%;
+        background: rgba(255, 98, 0, 0.295);
+        padding-top: 200px;
+    }
+    .ads img {
+        width: 100%;
+    }
+
+    /* Nội dung giữa */
+    .content {
+        width: 70%;
+        padding: 5;
+    }
+
+    /* Logo */
+    .logo {
+        text-align: center;
+        padding: 0px;
+        background: rgba(78, 30, 1, 0.774);
+    }
+    .logo img {
+        height: 330px;
+        cursor: pointer;
+    }
+
+    /* Menu */
+    .menu {
+        background-image: url('BACKGROUND_MENU.jpg');
+        background-size: cover;
+        padding: 10px;
+        gap: 60px;
+    }
+    
+    /* Các trang dùng chung */
+    .page {
+        padding: 20px;
+        background: white;
+        margin: 20px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+
+<!-- Quảng cáo trái -->
+<div class="ads">
+    <img src="559884874_1221533650009774_2715021897039149132_n.jpg" height="700">
+</div>
+
+<!-- Nội dung chính -->
+<div class="content">
+
+    <!-- Logo -->
+    <div class="logo" onclick="showPage('home')">
+        <img src="557601618_1221554630007676_3874609915612296608_n.jpg">
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <div class="dropdown">
+            <span>Sơ lược kịch bản</span>
+            <div class="dropdown-content">
+                <a href="#" onclick="showPage('boicanh')">Bối cảnh</a>
+                <a href="#" onclick="showPage('noidung')">Nội dung</a>
+                <a href="#" onclick="showPage('credit')">Credit</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Nhân vật</span>
+            <div class="dropdown-content">
+                <a href="#" onclick="showPage('trong')">Trọng</a>
+                <a href="#" onclick="showPage('hoa')">Hoa</a>
+                <a href="#" onclick="showPage('tuc')">Túc</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <span>Thông tin đáng chú ý</span>
+            <div class="dropdown-content">
+                <a href="#" onclick="showPage('conhivien')">Cô nhi viện</a>
+                <a href="#" onclick="showPage('nhakho')">Nhà kho</a>
+                <a href="#" onclick="showPage('nuoc_thanh')">Nước thánh</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRANG CHÍNH -->
+    <div id="home" class="page">
+        <h1>ON STAGE 2025: RẠCH CẠN</h1>
+        <p>Giữa miền đồng hoang cỏ úa, con rạch khô nằm lại như một vết sẹo già trên da thịt của đất. Dòng nước rút đi để lại sự trơ tráy cạn cùng, đọng lại chỉ còn thứ bùn rêu tơ tướp mang hơi thở của cái ác - thứ bóp nghẹt sự sống của những khát khao tốt lành. </p>
+        <p>Dẫu vậy, dưới đáy sâu vang vọng những ẩn ức chưa được hóa giải, từng hạt mầm khát khao vẫn khẽ lay mình, lặng lẽ ghép lại những mảnh vỡ của ký ức.</p>
+        <p>Khát vọng trong trẻo ấy thôi thúc hành trình truy tìm tận cùng ngõ thẳm của sự thật, nơi những tiếng nói bị chôn vùi dưới lớp bùn sâu nay được lắng nghe, chạm tới mạch nguồn bị lãng quên. Và dường như đất cũng đáp lại, trong lòng tăm tối ấy, sự sống lại khẽ chuyển mình.</p>
+        <p>Từ lòng đất, một âm thanh vọng lại, như tiếng nước trở mình sau giấc ngủ dài. </p>
+    </div>
+
+    <!-- Các trang con + trang cháu -->
+
+    <div id="boicanh" class="page" style="display:none">
+        <h2>Bối cảnh</h2>
+        <p>Lấy bối cảnh tại miền Đông Nam Bộ những năm 80, vở kịch là bức họa về một làng quê nơi ẩn hiện những hủ tục núp bóng dưới lớp vỏ của thần linh. Ở nơi con người dựa vào đức tin để tồn tại, hành trình của họ trở thành tấm gương phản chiếu muôn hình vạn trạng của niềm tin: có người tin để sống, có kẻ tin để quên, và cũng có những người vì niềm tin mà đánh mất chính mình.</p>
+        <p>Liệu niềm tin có phải ánh sáng dẫn lối, hay chỉ là ngọn đuốc khiến con người tự thiêu giữa đêm đen mê muội?</p>
+        <img src="_DHN7436.jpg" width="500">
+    </div>
+
+    <div id="noidung" class="page" style="display:none">
+        <h2>Sơ lược về nội dung</h2>
+        <p>Câu chuyện theo chân nhân vật chính là Trọng, 28 tuổi, quê Thanh Hóa, từng làm điều dưỡng sinh ở trại tập trung thời chiến tranh. Lần theo những mẩu kí ức lờ mờ của mình về ngôi làng ngày xưa gia đình mình từng sinh sống, anh quay lại đó với mục đích tìm lại người mẹ và em gái đã mất tích từ 18 năm trước của mình</p>
+        <img src="_DHN7477.jpg" width="800">
+        <p>Tại đây, anh gặp được Hoa, cô gái được toàn thể dân làng kính trọng và đặt cho biệt danh "người truyền tin của thần" vì ban phát cho cả làng thứ nước thánh chữa được căn bệnh tâm linh mà mọi người mắc phải. Tuy nhiên, khi càng điều tra sâu hơn về tất cả mọi thứ, từng mảng sự thật trần trụi bắt đầu dần được hé mở, tiết lộ những điều cấm kị mà dường như không ai được phép có quyền biết đến.</p>
+        <img src="_DHN8510.jpg" width="500">
+        <img src="_DHN8903.jpg" width="500">
+
+    </div>
+    <div id="credit" class="page" style="display:none">
+        <h2>Credit</h2>
+        <p>Tổng đạo diễn: Nguyễn Linh Đan</p>
+        <p>Trưởng ban tổ chức: Nguyễn Diệu Linh</p>
+        <p>Chỉ đạo sản xuất: Đặng Văn Nam, Nguyễn Minh Ngọc</p>
+        <p>Phó ban tổ chức & Chỉ đạo hình ảnh: Đỗ Huyền Dạ Thảo</p>
+        <p>Giám đốc sân khấu: Nguyễn Minh Ngọc</p>
+        <p>Giám đốc nghệ thuật: Phạm Ngọc Bảo Linh</p>
+        <p>Giám đốc biên kịch: Nguyễn Việt Đức Trí</p>
+        <p>Giám đốc hậu trường: Nguyễn Lương Tuệ Nhi</p>
+        <p>Giám đốc sáng tạo: Nguyễn Lê Thuỷ Tiên</p>
+        <p>Giám đốc truyền thông: Phạm Mai Hương, Nguyễn Bá Hoàng Thái</p>
+        <p>Giám đốc tài chính: Trần Trọng Đạt</p>
+        <p>Giám đốc hình ảnh: Nguyễn Hương Giang, Phạm Minh Khôi, Nguyễn Huyền Linh</p>
+        <h3>Special thanks to:</h3>
+        <p>2007 Studio</p>
+        <p>Anh Bùi Nhật Minh</p>
+        <p>Chị Trần Nhi</p>
+        <p>Glee Phan Đình Phùng</p>
+        <p>Ams Crew</p>
+        <p>Cầm Ca</p>
+        <p>Chị Nguyễn Ngọc Bảo Ngân</p>
+        <p>Credit: 2007 Studio - Chụp Ảnh Kỷ Yếu</p>
+    
+    </div>
+
+    <div id="trong" class="page" style="display:none">
+        <h2>Nhân vật Trọng</h2>
+        <img src="564221303_1228193722677100_3508545083248391601_n.jpg" width="300">
+        <p>- Nam, 28 tuổi, từng là điều dưỡng, là anh trai ruột của Quỳnh, là con của 2 vợ chồng trước đây từng làm giáo viên ở cô nhi viện 18 năm trước (bố cậu tên là Thanh, mẹ cậu tên là Mai)</p>
+        <p>- Ngày xưa, trong 1 đêm ở cô nhi viện, anh đã bị bố đưa đi trốn ngay trong đêm mà không rõ lý do, không rõ rằng Quỳnh và mẹ mình đang ở đâu.</p>
+        <p>- Suốt 18 năm sống cùng bố, anh liên tục có những giấc mơ rất kì lạ về việc anh thấy có những người không rõ mặt mũi bắt đi những đứa trẻ, và ác mộng về việc Quỳnh liên tục gọi anh quay lại. Khi hỏi bố những chuyện như thế thì bố chỉ lặng đi, bảo rằng bố và mẹ đã ly hôn khi ở cô nhi viện, và không trả lời thêm gì anh. Đến 1 hôm thì anh đã thấy bố mình tự vẫn ở trong phòng làm việc.</p>
+        <p>- Do có quá khứ như thế nên Trọng có xu hướng ít nói, thu mình lại với mọi người xung quanh, để ý tiểu tiết để góp phần tìm ra sự thật mà anh theo đuổi.</p>
+        <p>- Lúc đầu khi đến cô nhi viện anh chỉ chú tâm vào công việc và mục đích cá nhân của mình là tìm em gái Quỳnh.</p>
+        <p>- Sau khi tiếp xúc với Hoa và cô nhi viện, anh đã dần trở nên yêu mến nơi này hơn và dần đã mở rộng lòng mình ra hơn, bắt đầu đi tìm hiểu nhiều hơn về những thứ ở trong ngôi làng này.</p>
+        <p>- Trang phục: Màu xanh dương nhạt, đậm dần về cuối vở kịch</p>
+    
+    </div>
+    <div id="hoa" class="page" style="display:none">
+        <h2>Nhân vật Hoa</h2>
+        <img src="565913298_1229131429249996_2282717964308137220_n.jpg" width="300">
+        <p>- Nữ, khoảng 27 tuổi, là em gái ruột của Trọng, thông minh dịu dàng, rất thương yêu những đứa trẻ ở cô nhi viện.</p>
+        <p>- Trong quá khứ, cô cùng những đứa trẻ khác bị hội ông Châu liệt bắt đi ngay trong đêm nhưng đã được mẹ cô giải cứu và trốn thoát được. Nhưng mẹ cô đã bị hội ông Châu thủ tiêu.</p>
+        <p>- Khi quay lại được trước cửa cô nhi viện, cô được cô Diễm nhận vào cô nhi viện mà không ai hay biết về danh tính thực sự của cô.</p>
+        <p>- Chứng kiến tất cả những việc như thế, những đứa trẻ bị bắt đi không trở lại, và cả việc cô nghĩ Trọng và bố bỏ mình đi, cô đã quyết định ở lại cô nhi viện, đổi tên, lấy cho mình thân phận mới là một đứa trẻ mồ côi ở cô nhi viện.</p>
+        <p>- Sau này, cô tiếp quản cô nhi viện, tạo nên buổi lễ giải hạn định kì để cho những đứa trẻ ở cô nhi viện uống “nước thánh” để giải độc cho những nguồn nước bẩn ở nhà máy ông Châu.</p>
+        <p>- Tin rằng giữ cho nghi lễ giải hạn tồn tại là cách duy nhất để bảo vệ bọn trẻ khỏi sự tàn nhẫn và mê tín của làng. Thậm chí âm mưu đầu độc ông Châu, hãm hại Túc, đốt cháy nhà kho để sự thật không bị bại lộ.</p>
+        <p>- Trang phục: Màu đỏ</p>
+
+    </div>
+    <div id="tuc" class="page" style="display:none">
+        <h2>Nhân vật Túc</h2>
+        <img src="559275502_1225451092951363_1701554491629557944_n.jpg" width="300">
+        <p>- Nam, khoảng 20 tuổi, từng là trẻ mồ côi lớn lên trong cô nhi viện.</p>
+        <p>- Cậu có tính tò mò, ngây thơ, bốc đồng, thích tìm tòi tìm hiểu sự thật đằng sau tất cả mọi thứ.</p>
+        <p>- Là 1 trong những người hiếm hoi không tin vào thần linh và tâm linh ở trong làng và tin rằng sự thật và khoa học luôn là thứ tốt đẹp và có lợi dành cho ngôi làng.</p>
+        <p>- Đại diện cho người trẻ thanh niên đầy năng lượng, luôn muốn tìm tòi, học hỏi.</p>
+        <p>- Sau sự kiện chính, cậu trở nên chín chắn hơn và góp phần phát triển tiếp cô nhi viện của làng.</p>
+        <p>- Trang phục: màu nâu cam</p>
+    
+    </div>
+
+    <div id="conhivien" class="page" style="display:none">
+        <h2>Cô nhi viện</h2>
+        <img src="_MFZ6499.jpg" width="700">
+        <p>Cô nhi viện đại diện cho những giá trị tốt đẹp dẫu có trong 1 xã hội đẩy mục rũa. Không có thông tin cụ thể về việc ai là người đứng ra cải tạo nơi đây thành cô nhi viện, và tại sao lại làm như thế. Chỉ biết được rằng đó chắc chắn là 1 người tốt và vì lí do tốt!</p>
+    </div>
+    <div id="nhakho" class="page" style="display:none">
+        <h2>Nhà kho</h2>
+        <img src="_MFZ7509.jpg" width="900">
+        <p>Nhà kho cũ nằm ở sân sau của cô nhi viện. Lũ trẻ thường hay bảo nơi đây kì dị, ghê rợn. Nhiều người lớn cũng không tin đâu, nhưng mà đi vào rồi mới biết: Phải có lí do thì mới có cái cảm giác ghê ghê rợn rợn như vậy...</p>
+    </div>
+    <div id="nuoc_thanh" class="page" style="display:none">
+        <h2>Nước thánh</h2>
+        <img src="_MFZ8167.jpg" width="800">
+        <p> Mát mát, ngọt ngọt. Đó là thứ nước thiêng liêng mà mỗi khi nghi lễ giải hạn được thực hiện, ai cũng thèm khát có được nó. Chậm trễ 1 chút có thể phải trả giá bằng cả tính mạng, vì "nước thánh" là có giới hạn.</p>
+    </div>
+
+</div>
+
+<!-- Quảng cáo phải -->
+<div class="ads">
+    <img src="559884874_1221533650009774_2715021897039149132_n.jpg" height="700">
+</div>
+
+</body>
+</html>
